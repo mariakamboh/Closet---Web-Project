@@ -1,0 +1,86 @@
+/* FAQ Container Styling */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  padding: 30px 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+.faq-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  margin-top: 100px;
+  color: #333;
+}
+
+/* FAQ List Styling */
+.faq-list {
+  margin-top: 20px;
+}
+
+/* FAQ Item Styling */
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover Effect for FAQ Item */
+.faq-item:hover {
+  background-color: #f0f0f0;
+}
+
+/* FAQ Question Styling */
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  color: #333;
+  padding: 3px;
+}
+
+/* Arrow Icon Styling */
+.faq-question span {
+  font-size: 20px;
+  color: #000000;
+}
+
+/* Shadow Effect on Second Question */
+.faq-item:nth-child(2) .faq-question {
+  background-color: #e6f1ff;
+  box-shadow: 0 2px 6px rgba(0, 123, 255, 0.2);
+  border-radius: 5px;
+}
+
+/* FAQ Answer Styling */
+.faq-answer {
+  margin-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+@media (max-width: 768px) {
+  .faq-container {
+    width: 95%;
+  }
+  .faq-question {
+    font-size: 14px;
+  }
+  .faq-answer {
+    font-size: 12px;
+  }
+}

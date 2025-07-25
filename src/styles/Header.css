@@ -1,0 +1,74 @@
+/* Updated Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  background-color: #dbe2e2;
+  padding: 20px 30px;
+  color: #000;
+  position: fixed;
+  width: 100%;
+}
+
+
+.logo {
+  margin-right: 50px; 
+}
+
+.logo a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation styles */
+.nav {
+  display: flex;
+  gap: 40px; /* Increases spacing between Home, Bridal, and Groom */
+}
+
+.nav-links {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item a {
+  color: #000000;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-item a:hover {
+  color: #f0a500; /* Highlight color on hover */
+}
+
+/* Dropdown menu */
+.dropdown {
+  position: absolute;
+  top: 100%; /* Place below the parent link */
+  left: 0;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1000;
+  padding: 10px 20px;
+}
+.dropdown li {
+  list-style: none;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 10px 20px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 16px;
+}
